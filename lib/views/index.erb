@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>the Gossip Projet</title>
+</head>
+<body><center>
+	<h1>mon super site de gossip,depuis le dossier views! pour voir les listes des potin cliquer ici 
+		<% gossips.each do |gossip| %>
+        <p>
+          <%= gossip.author %><br/>
+          <%= gossip.content %>
+        </p>
+      <% end %>
+		<a href="/gossips/new/">liste des potin </a></h1>
+<center>
+</body>
+</html>

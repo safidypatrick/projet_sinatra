@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PAGE POTIN</title>
+</head>
+<body><center>
+	<h1> Voici la page du potin num <%= params[:id]%></h1>
+	<p>
+		son auteur : <%= gossip.author %> <br/>
+		le contenu du potin : <%= gossip.content %><br>
+		<h2>les commentaire</h2>
+		<textarea></textarea>
+
+	<p> Pour revenir à la page <a href="/"> d'acceuil </a></p> 
+	<p> vous souhaitez editer votre gossip! c'est par <a href="/gossip/edit/:id<%=params[:id]%>"> ici</a></p>
+
+</center>
+</body>
+</html>
